@@ -1,0 +1,133 @@
+.lifestyle {
+  h1.description {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    @include xsmall {
+      font-size: 1.5rem;
+    }
+    @include small {
+      font-size: 1.8rem;
+    }
+    @include large {
+      font-size: 2.2rem;
+    }
+  }
+  div.container {
+    margin: 0 auto 50px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    @include medium {
+      display: block;
+      position: relative;
+      min-height: 1000px;
+      width: 90%;
+    }
+    @include large {
+      width: 80%;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      margin: 30px auto 0 auto;
+      align-items: center;
+      text-align: center;
+      @include xxsmall {
+        width: 60%;
+      }
+      @include xsmall {
+        width: 80%;
+      }
+      @include small {
+        width: 60%;
+      }
+      @include medium {
+        position: absolute;
+        width: 33%;
+        height: 500px;
+      }
+      img {
+        width: 130px;
+        margin-bottom: 20px;
+        @include xsmall {
+          width: 200px;
+          margin-bottom: 30px;
+          transition: 1s;
+        }
+      }
+      img:hover {
+        @include xsmall {
+          transform: rotateY(360deg);
+        }
+      }
+      h1 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        border-bottom: solid black 1px;
+        padding: 1px;
+        width: 40%;
+        margin-bottom: 10px;
+        @include xsmall {
+          font-size: 2.2rem;
+          margin-bottom: 20px;
+        }
+        @include medium {
+          font-size: 2.6rem;
+        }
+        @include large {
+          font-size: 3.2rem;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        @include xsmall {
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+        }
+        @include medium {
+          font-size: 1.7rem;
+          line-height: 3rem;
+        }
+      }
+    }
+    div.family {
+      @include medium {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }  
+    div.film {
+      @include medium {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }  
+    div.music{
+      @include medium {
+        top: 0;
+        right: 0;
+      }
+    }  
+    div.travel {
+      @include medium {
+        bottom: 0;
+        left: 0;
+      }
+    }  
+    div.sport {
+      @include medium {
+        bottom: 0;
+        right: 0;
+      }
+    }  
+  }
+}
+
+
+
+

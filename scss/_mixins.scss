@@ -1,0 +1,49 @@
+$xxsBreakpoint: 400px;
+$xsBreakpoint: 576px;
+$smBreakpoint: 768px;
+$mdBreakpoint: 1024px;
+$lgBreakpoint: 1290px;
+$xlBreakpoint: 1440px;
+$xxlBreakpoint: 1700px;
+
+@mixin xxsmall {
+   @media only screen and (min-width: $xxsBreakpoint) {
+      @content
+   }
+};
+
+@mixin xsmall {
+   @media only screen and (min-width: $xsBreakpoint) {
+      @content
+   }
+};
+   
+@mixin small {
+   @media only screen and (min-width: $smBreakpoint) {
+      @content
+   }
+};
+   
+@mixin medium {
+   @media only screen and (min-width: $mdBreakpoint) {
+      @content
+   }
+};
+   
+@mixin large {
+   @media only screen and (min-width: $lgBreakpoint) {
+      @content
+   }
+};
+   
+@mixin xlarge {
+   @media only screen and (min-width: $xlBreakpoint) {
+      @content
+   }
+};
+
+@mixin xxlarge {
+   @media only screen and (min-width: $xxlBreakpoint) {
+      @content
+   }
+};

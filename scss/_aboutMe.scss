@@ -1,0 +1,154 @@
+.aboutMe {
+  position: relative;
+  margin-bottom: 30px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 5px 10px; 
+    overflow: hidden;
+    @include small {
+      flex-direction: row;
+    }
+    img {
+      width: 70%;
+      height: auto;
+      margin: 20px auto 0 auto;
+      @include xsmall {
+        width: 60%;
+      }
+      @include small {
+        width: 50%;
+      }
+      @include medium {
+        width: 45%;
+      }
+      @include large {
+        width: 40%;
+      }
+      @include xlarge {
+        width: 30%;
+      }
+    }
+    .introduction {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      @include xsmall {
+        width: 60%;
+      }
+      @include small {
+        text-align: right;
+        margin: 50px 30px auto 50px;
+      }
+      @include medium {
+        margin-top: 100px;
+        width: 45%;
+        margin-right: 50px;
+      }
+      @include large {
+        width: 45%;
+        margin-top: 150px;
+      }
+      @include xlarge {
+        width: 30%;
+        margin-top: 150px;
+        margin-right: 300px;
+      }
+      h1, span {
+        display: inline-block;
+        text-transform: lowercase;
+        font-weight: 500;
+        line-height: 2rem;
+        font-size: 1.9rem;
+        letter-spacing: 2px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        @include xsmall {
+          font-size: 2.3rem;
+          line-height: 4rem;
+        }
+        @include small {
+          font-size: 4rem;
+          font-weight: 400;
+        }
+        @include medium {
+          font-size: 5rem;
+          margin-bottom: 10px;
+        }
+      }
+      div.border {
+        width: 60%;
+        border-top: #000 solid 1px;
+        margin: 0 auto;
+        @include small {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+      .cursor {
+        animation: cursor-blink 1s infinite;
+      }
+      @keyframes cursor-blink {
+        0% {
+          opacity: 0;
+        }
+        25% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        75% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      p {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        letter-spacing: 0.3px;
+        font-weight: 400;
+        @include xsmall {
+          font-size: 1.3rem;
+          letter-spacing: 0.8px;
+          line-height: 2.2rem;
+          margin-top: 10px;
+        }
+        @include small {
+          font-size: 1.4rem;
+          letter-spacing: 0.5px;
+          text-align: right;
+          line-height: 2.5rem;
+          font-weight: 400;
+        }
+        @include medium {
+          font-size: 1.6rem;
+          font-weight: 300;
+          margin-top: 15px;
+          line-height: 3rem;
+          letter-spacing: 0.1px;
+        }
+        @include large {
+          font-size: 1.9rem;
+          margin-top: 20px;
+          line-height: 3.5rem;
+        }
+      }
+    }
+  }
+  .bgGuitar {
+    position: relative;
+    margin-top: 50px;
+    height: 60vh;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    background-image: url("../img/guitar.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}

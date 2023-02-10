@@ -1,0 +1,90 @@
+.technologies {
+  div.bgBusiness {
+      position: relative;
+      margin-top: 20px;
+      min-width: 230px;
+      min-height: 700px;
+      border-top: solid black 2px;
+      border-bottom: solid black 2px;
+      background-image: url("../img/business.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      div.technoText {
+        width: 80%;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 0.9rem;
+        letter-spacing: 1.2px;
+        line-height: 1.2rem;
+        padding: 15px;
+        text-align: justify;
+        @include small {
+          font-size: 1.1rem;
+          width: 60%;
+          line-height: 1.5rem;
+          letter-spacing: 1.3px;
+        }
+        @include medium {
+          width: 50%;
+        }
+        @include large {
+          width: 40%;
+          font-size: 1.3rem;
+          line-height: 1.9rem;
+        }
+      
+        p {
+          margin-bottom: 15px;
+          span {
+            font-weight: 600;
+            color: rgb(131, 66, 13);
+          }
+        }
+      }
+    }
+    div.container {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      @include small {
+        width: 80%;
+      }
+      div {
+        display: flex;
+        width: 33%;
+        justify-content: center;
+        margin: 20px auto 20px auto;
+        @include small {
+          width: 25%;
+        }
+        @include small {
+          margin: 40px auto 40px auto;
+        }
+      }
+      a {
+        display: inline-block;
+      }
+      img.techIcon {
+        width: 50px;
+        height: 50px;
+        @include xxsmall {
+          width: 100px;
+          height: 100px;
+          transition: .1s linear;
+        }
+        @include medium {
+          width: 150px;
+          height: 150px;
+        }
+      }
+      img.techIcon:hover {
+        @include xxsmall {
+          transform: scale(1.1);
+        }   
+      }
+    }
+  }

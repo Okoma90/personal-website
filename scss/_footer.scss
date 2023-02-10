@@ -1,0 +1,27 @@
+.footer {
+  border-top: rgb(0, 0, 0) solid 2px;
+  padding: 20px;
+  background-color: #babbaf;
+  p {
+    font-family: 'Permanent Marker', cursive;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.2rem;
+    @include xsmall {
+      font-size: 1.5rem;
+    }
+  }
+  .logo {
+    text-align: center;
+    img {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      @include xsmall {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
